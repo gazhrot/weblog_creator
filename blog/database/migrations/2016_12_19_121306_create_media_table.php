@@ -4,7 +4,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\DB;
 
-class CreateCategorie extends Migration
+class CreateMediaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,9 @@ class CreateCategorie extends Migration
      */
     public function up()
     {
-        Schema::create('categorie', function (Blueprint $table) {
+        Schema::create('media', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('id_blog');
-            $table->string('name');
-            $table->timestamps();
-
-            $table->foreign('id_blog')->references('id')->on('blog')->onDelete('cascade');
+            $table->string('media');
         });
     }
 
@@ -30,6 +26,6 @@ class CreateCategorie extends Migration
      */
     public function down()
     {
-        DB::statement('DROP TABLE IF EXISTS categorie CASCADE');
+        Schema::drop('media');
     }
 }

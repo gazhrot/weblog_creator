@@ -4,7 +4,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\DB;
 
-class CreateBlog extends Migration
+class CreateArticleTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,15 @@ class CreateBlog extends Migration
      */
     public function up()
     {
-        Schema::create('blog', function (Blueprint $table) {
+        Schema::create('article', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('id_user');
+            $table->unsignedInteger('id_categorie');
             $table->string('titre');
-            $table->string('description');
-            $table->string('banniere');
+            $table->string('chapo');
+            $table->string('corps');
             $table->timestamps();
 
-            $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('id_categorie')->references('id')->on('categorie')->onDelete('cascade');
         });
     }
 
@@ -32,6 +32,6 @@ class CreateBlog extends Migration
      */
     public function down()
     {
-        DB::statement('DROP TABLE IF EXISTS blog CASCADE');
+        Schema::drop('article');
     }
 }
