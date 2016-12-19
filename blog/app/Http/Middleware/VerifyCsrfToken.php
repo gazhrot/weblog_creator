@@ -25,7 +25,7 @@ class VerifyCsrfToken extends BaseVerifier
     {
     	//$request->session()->token()
 
-    	$token = $request->header('X-CSRF-Token') == 'token-cheetos' ?: $request->input('_token');
+    	$token = $request->header('X-CSRF-Token') == 'token-jaja' ?: $request->input('_token');
 
     	return $token;
     }
