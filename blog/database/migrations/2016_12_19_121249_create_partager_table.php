@@ -4,7 +4,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\DB;
 
-class CreateArticle extends Migration
+class CreatePartagerTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,14 @@ class CreateArticle extends Migration
      */
     public function up()
     {
-        Schema::create('article', function (Blueprint $table) {
+        Schema::create('partager', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('id_categorie');
-            $table->string('titre');
-            $table->string('chapo');
-            $table->string('corps');
+            $table->unsignedInteger('id_user');
+            $table->unsignedInteger('id_blog');
             $table->timestamps();
 
-            $table->foreign('id_categorie')->references('id')->on('categorie')->onDelete('cascade');
+            $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('id_blog')->references('id')->on('blog')->onDelete('cascade');
         });
     }
 
@@ -32,6 +31,6 @@ class CreateArticle extends Migration
      */
     public function down()
     {
-        DB::statement('DROP TABLE IF EXISTS article CASCADE');
+        Schema::drop('partager');
     }
 }

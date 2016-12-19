@@ -4,7 +4,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\DB;
 
-class CreateCommentaire extends Migration
+class CreateBlogTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,15 @@ class CreateCommentaire extends Migration
      */
     public function up()
     {
-        Schema::create('commentaire', function (Blueprint $table) {
+        Schema::create('blog', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('id_user');
-            $table->unsignedInteger('id_article');
-            $table->string('commentaire');
+            $table->string('titre');
+            $table->string('description');
+            $table->string('banniere');
             $table->timestamps();
 
             $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('id_article')->references('id')->on('article')->onDelete('cascade');
         });
     }
 
@@ -32,6 +32,6 @@ class CreateCommentaire extends Migration
      */
     public function down()
     {
-        DB::statement('DROP TABLE IF EXISTS commentaire CASCADE');
+        Schema::drop('blog');
     }
 }
