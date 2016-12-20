@@ -14,6 +14,9 @@ Route::get('/', function () {
     return view('files/home');
 });
 
+Route::get('/register', 'Auth\AuthController@showRegistrationForm');
+Route::post('/register', 'Auth\AuthController@register');
+
 Route::get('/login', function () { return view('files/login'); });
 Route::post('/login', 'Auth\AuthController@login');
 Route::get('/logout', 'Auth\AuthController@logout');
