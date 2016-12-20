@@ -150,6 +150,7 @@
                             <!--Form-->
                             <div class="card wow fadeInRight">
                                 <div class="card-block">
+                                <form action="{{ URL::to('register') }}" method="POST">
                                     <!--Header-->
                                     <div class="text-xs-center">
                                         <h3><i class="fa fa-user"></i> Inscription:</h3>
@@ -159,25 +160,32 @@
                                     <!--Body-->
                                     <div class="md-form">
                                         <i class="fa fa-user prefix"></i>
-                                        <input type="text" id="form3" class="form-control">
+                                        <input type="text" name="name" id="form3" class="form-control">
                                         <label for="form3">Votre nom</label>
                                     </div>
                                     <div class="md-form">
                                         <i class="fa fa-envelope prefix"></i>
-                                        <input type="text" id="form2" class="form-control">
+                                        <input type="text" name="email" id="form2" class="form-control">
                                         <label for="form2">Votre email</label>
                                     </div>
 
                                     <div class="md-form">
                                         <i class="fa fa-lock prefix"></i>
-                                        <input type="password" id="form4" class="form-control">
+                                        <input type="password" name="password" id="form4" class="form-control">
                                         <label for="form4">Votre mot de passe</label>
+                                    </div>
+
+                                    <div class="md-form">
+                                        <i class="fa fa-lock prefix"></i>
+                                        <input type="password" name="password_confirmation" id="form4" class="form-control">
+                                        <label for="form4">Confirmer votre mot de passe</label>
                                     </div>
 
                                     <div class="text-xs-center">
                                         <button class="btn btn-ins btn-lg">Valider</button>
                                         <hr>
                                     </div>
+                                    </form>
 
                                 </div>
                             </div>

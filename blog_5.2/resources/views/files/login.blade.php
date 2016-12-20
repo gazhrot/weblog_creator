@@ -146,27 +146,29 @@
                             <!--Form-->
                             <div class="card wow fadeInRight">
                                 <div class="card-block">
-                                    <!--Header-->
-                                    <div class="text-xs-center">
-                                        <h3><i class="fa fa-user"></i> Connexion :</h3>
-                                    </div>
+                                    <form action="{{ URL('login') }}" method="POST">
+                                        <!--Header-->
+                                        <div class="text-xs-center">
+                                            <h3><i class="fa fa-user"></i> Connexion :</h3>
+                                        </div>
 
-                                    <!--Body-->
-                                    <div class="md-form">
-                                        <i class="fa fa-envelope prefix"></i>
-                                        <input type="text" id="form2" class="form-control">
-                                        <label for="form2">Votre email</label>
-                                    </div>
+                                        <!--Body-->
+                                        <div class="md-form">
+                                            <i class="fa fa-envelope prefix"></i>
+                                            <input type="text" name="email" id="form2" class="form-control">
+                                            <label for="form2">Votre email</label>
+                                        </div>
 
-                                    <div class="md-form">
-                                        <i class="fa fa-lock prefix"></i>
-                                        <input type="password" id="form4" class="form-control">
-                                        <label for="form4">Votre mot de passe</label>
-                                    </div>
+                                        <div class="md-form">
+                                            <i class="fa fa-lock prefix"></i>
+                                            <input type="password" name="password" id="form4" class="form-control">
+                                            <label for="form4">Votre mot de passe</label>
+                                        </div>
 
-                                    <div class="text-xs-center">
-                                        <button class="btn btn-primary btn-lg">COnnexion</button>
-                                    </div>
+                                        <div class="text-xs-center">
+                                            <button class="btn btn-primary btn-lg">Connexion</button>
+                                        </div>
+                                    </form>
 
                                 </div>
                             </div>
