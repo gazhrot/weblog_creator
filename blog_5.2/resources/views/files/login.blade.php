@@ -32,18 +32,18 @@
         }
         
         .top-nav-collapse {
-            background-color: #3F729B;
+            background-color: #4285F4;
         }
         
         @media only screen and (max-width: 768px) {
             .navbar {
-                background-color: #3F729B;
+                background-color: #4285F4;
             }
         }
         /*Intro*/
         
         .view {
-            background: url("http://mdbootstrap.com/images/regular/people/img%20(61).jpg")no-repeat center center fixed;
+            background: url("http://mdbootstrap.com/images/regular/city/img%20(25).jpg")no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -90,7 +90,6 @@
 
                 <!--Collapse content-->
                 <div class="collapse navbar-toggleable-xs" id="collapseEx">
-                    <!--Navbar Brand-->
                     <a class="navbar-brand" href="{{ URL::to('/') }}" >JAJABLOG</a>
                     <!--Links-->
                     <ul class="nav navbar-nav">
@@ -104,7 +103,6 @@
 
                     <!--Navbar icons-->
                     <ul class="nav navbar-nav nav-flex-icons">
-
                         <li class="nav-item">
                             <a class="nav-link"><i class="fa fa-facebook"></i></a>
                         </li>
@@ -114,9 +112,7 @@
                         <li class="nav-item">
                             <a class="nav-link"><i class="fa fa-instagram"></i></a>
                         </li>
-
                     </ul>
-
                 </div>
                 <!--/.Collapse content-->
 
@@ -134,7 +130,7 @@
                         <!--First column-->
                         <div class="col-lg-6">
                             <div class="description">
-                                <h2 class="h2-responsive wow fadeInLeft">Inscription </h2>
+                                <h2 class="h2-responsive wow fadeInLeft">Connexion </h2>
                                 <hr class="hr-dark wow fadeInLeft">
                                 <p class="wow fadeInLeft" data-wow-delay="0.4s">
                                 Pour se démarquer et se faire entendre à travers la cacophonie du web, 
@@ -152,16 +148,10 @@
                                 <div class="card-block">
                                     <!--Header-->
                                     <div class="text-xs-center">
-                                        <h3><i class="fa fa-user"></i> Inscription:</h3>
-                                        <hr>
+                                        <h3><i class="fa fa-user"></i> Connexion :</h3>
                                     </div>
 
                                     <!--Body-->
-                                    <div class="md-form">
-                                        <i class="fa fa-user prefix"></i>
-                                        <input type="text" id="form3" class="form-control">
-                                        <label for="form3">Votre nom</label>
-                                    </div>
                                     <div class="md-form">
                                         <i class="fa fa-envelope prefix"></i>
                                         <input type="text" id="form2" class="form-control">
@@ -175,8 +165,7 @@
                                     </div>
 
                                     <div class="text-xs-center">
-                                        <button class="btn btn-ins btn-lg">Valider</button>
-                                        <hr>
+                                        <button class="btn btn-primary btn-lg">COnnexion</button>
                                     </div>
 
                                 </div>

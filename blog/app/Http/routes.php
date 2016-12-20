@@ -14,3 +14,19 @@
 Route::get('/', function () {
     return view('files/home');
 });
+
+
+
+Route::get('/login', function () {
+    return view('files/login');
+});
+
+
+Route::get('/edit', function () {
+    return view('files/editprofil');
+});
+
+
+Route::get('/article', function () {
+    return view('files/article');
+});
