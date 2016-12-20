@@ -14,10 +14,9 @@ Route::get('/', function () {
     return view('files/home');
 });
 
-Route::get('/login', function () {
-    return view('files/login');
-});
-
+Route::get('/login', function () { return view('files/login'); });
+Route::post('/login', 'Auth\AuthController@login');
+Route::get('/logout', 'Auth\AuthController@logout');
 
 Route::get('/edit', function () {
     return view('files/editprofil');
@@ -27,6 +26,6 @@ Route::get('/article', function () {
     return view('files/article');
 });
 
-Route::auth();
+//Route::auth();
 
-Route::get('/home', 'HomeController@index');
+//Route::get('/home', 'HomeController@index');

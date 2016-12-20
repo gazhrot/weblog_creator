@@ -90,14 +90,14 @@
 
                 <!--Collapse content-->
                 <div class="collapse navbar-toggleable-xs" id="collapseEx">
-                    <a class="navbar-brand" href="{{ URL::to('/') }}" >JAJABLOG</a>
+                    <a class="navbar-brand" href="{{ url('/') }}" >JAJABLOG</a>
                     <!--Links-->
                     <ul class="nav navbar-nav">
                     <li class="nav-item">
-                            <a class="nav-link" href="{{ URL::to('/') }}">Accueil <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="{{ url('/') }}">Accueil <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ URL::to('login') }}">Connexion <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="{{ url('/login') }}">Connexion <span class="sr-only">(current)</span></a>
                         </li>
                     </ul>
 
@@ -146,12 +146,12 @@
                             <!--Form-->
                             <div class="card wow fadeInRight">
                                 <div class="card-block">
-                                    <form action="{{ URL('login') }}" method="POST">
+                                    <form action="{{ url('/login') }}" method="POST">
                                         <!--Header-->
                                         <div class="text-xs-center">
                                             <h3><i class="fa fa-user"></i> Connexion :</h3>
                                         </div>
-
+                                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                         <!--Body-->
                                         <div class="md-form">
                                             <i class="fa fa-envelope prefix"></i>
