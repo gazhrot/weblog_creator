@@ -22,18 +22,10 @@ Route::post('/login', 'Auth\AuthController@login');
 Route::get('/logout', 'Auth\AuthController@logout');
 
 Route::get('/edit', function () {
-    return view('files/editprofil');
-});
-
-Route::get('/article', function () {
-<<<<<<< HEAD
     return view('files/creatblog');
 });
 
-//Route::auth();
-
-//Route::get('/home', 'HomeController@index');
-=======
+Route::get('/article', function () {
     return view('files/article');
 });
->>>>>>> 9228fe3ad1a6e6e0669685c3100ed69bc43893af
+
