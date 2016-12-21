@@ -26,9 +26,14 @@ Route::get('/edit', function () {
 });
 
 Route::get('/article', function () {
+<<<<<<< HEAD
     return view('files/creatblog');
 });
 
 //Route::auth();
 
 //Route::get('/home', 'HomeController@index');
+=======
+    return view('files/article');
+});
+>>>>>>> 9228fe3ad1a6e6e0669685c3100ed69bc43893af

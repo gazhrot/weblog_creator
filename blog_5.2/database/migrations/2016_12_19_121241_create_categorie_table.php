@@ -15,11 +15,11 @@ class CreateCategorieTable extends Migration
     {
         Schema::create('categorie', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('id_blog');
+            $table->unsignedInteger('blog_id');
             $table->string('name');
             $table->timestamps();
 
-            $table->foreign('id_blog')->references('id')->on('blog')->onDelete('cascade');
+            $table->foreign('blog_id')->references('id')->on('blog')->onDelete('cascade');
         });
     }
 
