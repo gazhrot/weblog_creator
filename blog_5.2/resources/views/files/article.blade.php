@@ -121,6 +121,7 @@
                         <br>
 
                         <!--Post excerpt-->
+                        {{ dd(Auth::user()->blog) }}
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, officia omnis. Vero nihil neque dignissimos hic voluptas quisquam amet porro, similique libero ullam veritatis tempora cumque voluptates harum. Repellendus, impedit.</p>
 
                         <!--"Détails" button-->
