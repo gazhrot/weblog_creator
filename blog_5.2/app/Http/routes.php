@@ -28,7 +28,3 @@ Route::get('/edit', function () {
 Route::get('/article', function () {
     return view('files/article');
 });
-
-//Route::auth();
-
-//Route::get('/home', 'HomeController@index');

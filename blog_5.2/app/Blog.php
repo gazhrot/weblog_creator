@@ -13,9 +13,17 @@ class Blog extends Model
 	public $timestamps 	  = true;
 
     protected $fillable = [
-    	''
+    	'user_id',
+    	'titre',
+    	'description',
+    	'banniere'
     ];
 
     protected $rules 	  = [];
 	protected $hidden 	  = [];
+
+	public function user()
+	{
+		return $this->belongsTo('App\User');
+	}
 }
