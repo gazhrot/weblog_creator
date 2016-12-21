@@ -15,12 +15,12 @@ class CreatePartagerTable extends Migration
     {
         Schema::create('partager', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('id_user');
-            $table->unsignedInteger('id_blog');
+            $table->unsignedInteger('user_id');
+            $table->unsignedInteger('blog_id');
             $table->timestamps();
 
-            $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('id_blog')->references('id')->on('blog')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('blog_id')->references('id')->on('blog')->onDelete('cascade');
         });
     }
 
