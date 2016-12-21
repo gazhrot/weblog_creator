@@ -26,7 +26,7 @@ Route::get('/edit', function () {
 });
 
 Route::get('/article', function () {
-    return view('files/article');
+    return view('files/creatblog');
 });
 
 //Route::auth();
