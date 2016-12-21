@@ -4,6 +4,37 @@
 
     <div class="container">
 
+        <form action="" method="POST">
+        <!--Page heading-->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="h1-responsive">Créer une categorie :</h1>
+            </div>
+        </div>
+        <!--/.Page heading-->
+        <hr>
+
+        <!--First row-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="md-form">
+                    <i class="fa fa-pencil prefix"></i>
+                    <input type="text" id="form81" class="form-control validate" required>
+                    <label for="form81" data-error="wrong" data-success="right">Nom de votre categorie</label>
+                </div>
+            </div>
+        </div>
+
+            <div class="row">
+                <div class="text-xs-center">
+                    <button class="btn btn-primary">Valider</button>
+                </div>
+            </div>
+        <!--/.First row-->
+        <hr>
+        </form>
+
+
         <!--Page heading-->
         <div class="row">
             <div class="col-md-12">
@@ -18,7 +49,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="md-form">
-                        <i class="fa fa-envelope prefix"></i>
+                        <i class="fa fa-pencil prefix"></i>
                         <input type="text" id="form81" class="form-control validate" required>
                         <label for="form81" data-error="wrong" data-success="right">Titre</label>
                     </div>
@@ -58,6 +89,11 @@
                 </div>
             </div>
         </form>
+
+
+
+
+
 
 
 
