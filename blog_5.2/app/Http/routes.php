@@ -25,6 +25,9 @@ Route::get('/edit', function () {
     return view('files/editprofil');
 });
 
-Route::get('/article', function () {
-    return view('files/article');
-});
+Route::get('/article', function () { return view('files/article'); });
+
+
+Route::post('/article', 'ArticleController@create');
+Route::post('/categorie', 'CategorieController@create');
+Route::post('/blog', 'BlogController@create');

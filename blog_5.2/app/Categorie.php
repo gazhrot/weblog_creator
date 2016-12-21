@@ -13,9 +13,15 @@ class Categorie extends Model
 	public $timestamps 	  = true;
 
     protected $fillable = [
-    	''
+    	'blog_id',
+    	'name'
     ];
 
     protected $rules 	  = [];
 	protected $hidden 	  = [];
+
+	public function blog()
+	{
+		return $this->belongsTo('App\Blog');
+	}
 }
