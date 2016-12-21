@@ -4,7 +4,7 @@
 
     <div class="container">
 
-        <form action="" method="POST">
+        <form action="{{ url('/categorie') }}" method="POST">
         <!--Page heading-->
         <div class="row">
             <div class="col-md-12">
@@ -27,7 +27,7 @@
 
             <div class="row">
                 <div class="text-xs-center">
-                    <button class="btn btn-primary">Valider</button>
+                    <button class="btn btn-primary">Créer</button>
                 </div>
             </div>
         <!--/.First row-->
@@ -44,7 +44,7 @@
         <!--/.Page heading-->
         <hr>
 
-        <form action="" method="POST">
+        <form action="{{ url('/blog') }}" method="POST">
             <!--First row-->
             <div class="row">
                 <div class="col-md-12">
