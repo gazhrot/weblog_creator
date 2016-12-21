@@ -22,12 +22,19 @@ Route::post('/login', 'Auth\AuthController@login');
 Route::get('/logout', 'Auth\AuthController@logout');
 
 Route::get('/edit', function () {
-    return view('files/editprofil');
+    return view('files/creatblog');
 });
 
+<<<<<<< HEAD
 Route::get('/article', function () { return view('files/article'); });
 
 
 Route::post('/article', 'ArticleController@create');
 Route::post('/categorie', 'CategorieController@create');
 Route::post('/blog', 'BlogController@create');
+=======
+Route::get('/article', function () {
+    return view('files/article');
+});
+
+>>>>>>> ed6d936a0382fee714bc641e982d10883e30cc25
