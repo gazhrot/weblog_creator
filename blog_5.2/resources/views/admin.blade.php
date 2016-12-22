@@ -43,7 +43,7 @@
             <div class="logo-wrapper sn-ad-avatar-wrapper">
                 <img src="http://mdbootstrap.com/images/avatars/img%20(9)" class="img-fluid rounded-circle">
                 <div class="rgba-stylish-strong">
-                    <p class="user white-text">jonathan<br>jonathan@gmail.com</p>
+                    <p class="user white-text">{{ Auth::user()->name }}<br>{{ Auth::user()->email }}</p>
                 </div>
             </div>
         </li>
