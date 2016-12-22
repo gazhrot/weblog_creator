@@ -28,7 +28,7 @@ class AuthController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/article';
+    protected $redirectTo = '/office';
 
     /**
      * Create a new authentication controller instance.
