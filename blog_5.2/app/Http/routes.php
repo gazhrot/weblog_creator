@@ -43,7 +43,6 @@ Route::group(['before' => 'auth'], function () {
 		$current_blog = App\Blog::findOrFail($id);
 		return view('files/article', ['current' => $current_blog]); 
 	});
-
 	Route::post('/article', 'ArticleController@create');
 	Route::post('/categorie', 'CategorieController@create');
 	Route::post('/blog', 'BlogController@create');
