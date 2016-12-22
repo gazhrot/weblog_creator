@@ -25,6 +25,7 @@
                             <div class="md-form">
                                 <input type="email" id="form81" class="form-control validate">
                                 <label for="form81" data-error="wrong" data-success="right">Email</label>
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
                             </div>
                         </div>
                     </div>
