@@ -77,10 +77,10 @@
                 <div class="file-field">
                     <div class="btn btn-primary btn-sm">
                         <span>Choose file</span>
-                        <input type="file">
+                        <input type="file" name="banniere"  >
                     </div>
                     <div class="file-path-wrapper">
-                        <input class="file-path validate" name="banniere" type="text" placeholder="Upload your file">
+                        <input class="file-path validate"  type="text" placeholder="Upload your file">
                     </div>
                 </div>
             </div>

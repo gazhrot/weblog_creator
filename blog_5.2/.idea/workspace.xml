@@ -28,8 +28,8 @@
       <file leaf-file-name="office.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/files/office.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="872">
-              <caret line="259" column="39" lean-forward="false" selection-start-line="259" selection-start-column="39" selection-end-line="259" selection-end-column="39" />
+            <state relative-caret-position="467">
+              <caret line="247" column="0" lean-forward="true" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -58,8 +58,8 @@
       <file leaf-file-name="creatblog.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/files/creatblog.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="77" column="56" lean-forward="true" selection-start-line="77" selection-start-column="56" selection-end-line="77" selection-end-column="56" />
+            <state relative-caret-position="563">
+              <caret line="79" column="47" lean-forward="true" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -69,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="29" column="63" lean-forward="false" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -359,12 +359,12 @@
       <workItem from="1482315491627" duration="5431000" />
       <workItem from="1482346682681" duration="24000" />
       <workItem from="1482361381992" duration="7741000" />
-      <workItem from="1482401632874" duration="2114000" />
+      <workItem from="1482401632874" duration="2777000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15316000" />
+    <option name="totallyTimeSpent" value="15979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="27" width="1869" height="1053" extended-state="0" />
@@ -717,14 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/files/office.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="872">
-          <caret line="259" column="39" lean-forward="false" selection-start-line="259" selection-start-column="39" selection-end-line="259" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/files/profil.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="518">
@@ -768,7 +760,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="29" column="63" lean-forward="false" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -781,10 +773,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/files/office.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="247" column="0" lean-forward="true" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/files/creatblog.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="77" column="56" lean-forward="true" selection-start-line="77" selection-start-column="56" selection-end-line="77" selection-end-column="56" />
+        <state relative-caret-position="563">
+          <caret line="79" column="47" lean-forward="true" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
           <folding />
         </state>
       </provider>
