@@ -39,7 +39,10 @@ Route::group(['before' => 'auth'], function () {
 	Route::get('/messagerie', function () { return view('files/messagerie '); });
 	Route::get('/write', function () { return view('files/write '); });
 	Route::get('/editcat', function () { return view('files/editcat '); });
-	Route::get('/article', function () { return view('files/article'); });
+	Route::get('/article/{id}', function ($id) {
+		$current_blog = App\Blog::findOrFail($id);
+		return view('files/article', ['current' => $current_blog]); 
+	});
 
 	Route::post('/article', 'ArticleController@create');
 	Route::post('/categorie', 'CategorieController@create');
