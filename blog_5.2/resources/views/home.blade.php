@@ -83,8 +83,9 @@
                 </ul>
                 <!--Search form-->
                 <form class="form-inline">
-                    <input class="form-control" type="text" placeholder="Search">
+                    <a class="btn btn-danger" href="{{ URL::to('/logout') }}">Déconnexion</a>
                 </form>
+
             </div>
             <!--/.Collapse content-->
 
@@ -209,13 +210,10 @@
 
 <!-- JQuery -->
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-
 <!-- Tooltips -->
 <script type="text/javascript" src="js/tether.min.js"></script>
-
 <!-- Bootstrap core JavaScript -->
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="js/mdb.min.js"></script>
 

@@ -21,9 +21,13 @@ Route::get('/login', function () { return view('files/login'); });
 Route::post('/login', 'Auth\AuthController@login');
 Route::get('/logout', 'Auth\AuthController@logout');
 
-Route::get('/edit', function () {
-    return view('files/creatblog');
-});
+Route::get('/edit', function () { return view('files/creatblog'); });
+Route::get('/office', function () { return view('files/office'); });
+Route::get('/friend', function () { return view('files/friend'); });
+Route::get('/profil', function () { return view('files/profil'); });
+Route::get('/messagerie', function () { return view('files/messagerie '); });
+Route::get('/write', function () { return view('files/write '); });
+Route::get('/editcat', function () { return view('files/editcat '); });
 
 Route::get('/article', function () { return view('files/article'); });
 
