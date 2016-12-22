@@ -33,6 +33,7 @@
                                 <div class="md-form">
                                     <input type="text" id="form52" class="form-control">
                                     <label for="form52" class="">Votre email</label>
+                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 </div>
                             </div>
                         </div>
@@ -84,6 +85,7 @@
                                 <i class="fa fa-lock prefix"></i>
                                 <input type="password" id="form83" class="form-control validate">
                                 <label for="form83" data-error="wrong" data-success="right">Confirmation de mot de passe</label>
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
                             </div>
                         </div>
 

@@ -21,6 +21,7 @@
                 <div class="md-form">
                     <i class="fa fa-envelope prefix"></i>
                     <input type="text" id="form81" class="form-control validate" required>
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <label for="form81" data-error="wrong" data-success="right">Titre</label>
                 </div>
             </div>
