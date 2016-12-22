@@ -155,18 +155,23 @@
                                         <!--Body-->
                                         <div class="md-form">
                                             <i class="fa fa-envelope prefix"></i>
-                                            <input type="text" name="email" id="form2" class="form-control">
+                                            <input type="text" name="email" id="form2" class="form-control" required>
                                             <label for="form2">Votre email</label>
                                         </div>
 
                                         <div class="md-form">
                                             <i class="fa fa-lock prefix"></i>
-                                            <input type="password" name="password" id="form4" class="form-control">
+                                            <input type="password" name="password" id="form4" class="form-control" required>
                                             <label for="form4">Votre mot de passe</label>
                                         </div>
 
+                                        <fieldset class="form-group">
+                                            <input type="checkbox" id="checkbox3" name="remember">
+                                            <label for="checkbox3" class="disabled">Rester connecté</label>
+                                        </fieldset>
+
                                         <div class="text-xs-center">
-                                            <button class="btn btn-primary btn-lg">Connexion</button>
+                                            <button type="submit" class="btn btn-primary btn-lg">Connexion</button>
                                         </div>
                                     </form>
 
