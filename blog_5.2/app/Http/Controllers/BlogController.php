@@ -16,15 +16,15 @@ class BlogController extends Controller
     {
     	if ($request->file('banniere')->isValid()) {
     		$extension = $request->file('banniere')->extension();
-    		$fileName = uniqid() . $extension; 
-    		$request->file('banniere')->move($destinationPath, $fileName);
+    		$fileName = uniqid() . '.' . $extension; 
+    		$request->file('banniere')->move('../public/upload', $fileName);
     	}
 
         $blog = new Blog;
         $blog->user_id = Auth::user()->id;
         $blog->titre = $request->input('titre');
         $blog->description = $request->input('description');
-        $blog->banniere = $request->input('banniere');
+        $blog->banniere = $fileName;
         $blog->save();
 
         return new Response();
