@@ -166,7 +166,7 @@
                                         </div>
 
                                         <div class="text-xs-center">
-                                            <button class="btn btn-primary btn-lg">Connexion</button>
+                                            <button type="submit" class="btn btn-primary btn-lg">Connexion</button>
                                         </div>
                                     </form>
 
