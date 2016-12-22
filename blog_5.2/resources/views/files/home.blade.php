@@ -74,7 +74,7 @@
 
 <body style="background-color: #000;">
 
-    <!--Navigation & Intro-->
+<!--Navigation & Intro-->
     <header>
 
         <!--Navbar-->

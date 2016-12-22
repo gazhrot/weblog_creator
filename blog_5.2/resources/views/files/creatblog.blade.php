@@ -51,7 +51,7 @@
                 <div class="col-md-12">
                     <div class="md-form">
                         <i class="fa fa-pencil prefix"></i>
-                        <input type="text" id="form81" class="form-control validate" required>
+                        <input type="text" id="form81" name="titre" class="form-control validate" required>
                         <label for="form81" data-error="wrong" data-success="right">Titre</label>
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     </div>
@@ -65,7 +65,7 @@
                 <div class="col-md-12">
 
                     <div class="md-form">
-                        <textarea type="text" id="form76" class="md-textarea" required></textarea>
+                        <textarea type="text" name="description" id="form76" class="md-textarea" required></textarea>
                         <label for="form76">Description</label>
                     </div>
 
@@ -80,7 +80,7 @@
                         <input type="file">
                     </div>
                     <div class="file-path-wrapper">
-                        <input class="file-path validate" type="text" placeholder="Upload your file">
+                        <input class="file-path validate" name="banniere" type="text" placeholder="Upload your file">
                     </div>
                 </div>
             </div>
