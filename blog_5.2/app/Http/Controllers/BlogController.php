@@ -14,6 +14,12 @@ class BlogController extends Controller
 {
     public function create(Request $request)
     {
+    	if ($request->file('banniere')->isValid()) {
+    		$extension = $request->file('banniere')->extension();
+    		$fileName = uniqid() . $extension; 
+    		$request->file('banniere')->move($destinationPath, $fileName);
+    	}
+
         $blog = new Blog;
         $blog->user_id = Auth::user()->id;
         $blog->titre = $request->input('titre');

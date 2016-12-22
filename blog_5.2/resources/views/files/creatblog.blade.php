@@ -45,7 +45,7 @@
         <!--/.Page heading-->
         <hr>
 
-        <form action="{{ url('/blog') }}" method="POST">
+        <form action="{{ url('/blog') }}" method="POST" enctype="multipart/form-data">
             <!--First row-->
             <div class="row">
                 <div class="col-md-12">
@@ -79,9 +79,9 @@
                         <span>Choose file</span>
                         <input type="file" name="banniere"  >
                     </div>
-                    <div class="file-path-wrapper">
+<!--                     <div class="file-path-wrapper">
                         <input class="file-path validate"  type="text" placeholder="Upload your file">
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
