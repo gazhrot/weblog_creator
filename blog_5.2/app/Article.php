@@ -18,4 +18,9 @@ class Article extends Model
 
     protected $rules 	  = [];
 	protected $hidden 	  = [];
+
+	public function blog()
+	{
+		return $this->belongsTo('App\Blog');
+	}
 }
