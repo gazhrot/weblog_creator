@@ -30,7 +30,10 @@ Route::get('/logout', 'Auth\AuthController@logout');
 
 Route::group(['before' => 'auth'], function () {
 	Route::get('/edit', function () { return view('files/creatblog'); });
-	Route::get('/office', function () { return view('files/office'); });
+	Route::get('/office', function () { 
+		$blog = App\Blog::where('user_id', Illuminate\Support\Facades\Auth::user()->id)->get();
+		return view('files/office', ['blog' => $blog]); 
+	});
 	Route::get('/friend', function () { return view('files/friend'); });
 	Route::get('/profil', function () { return view('files/profil'); });
 	Route::get('/messagerie', function () { return view('files/messagerie '); });
