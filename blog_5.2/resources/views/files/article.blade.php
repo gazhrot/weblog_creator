@@ -91,7 +91,7 @@
         <br>
         <!--Featured image -->
         <div class="view overlay hm-white-light z-depth-1-half">
-            <img src="http://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg" class="img-fluid " alt="">
+            <img src="{{ asset('upload/'.$article->photo) }}" class="img-fluid " alt="">
             <div class="mask">
             </div>
         </div>

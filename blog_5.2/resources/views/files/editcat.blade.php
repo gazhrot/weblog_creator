@@ -17,11 +17,13 @@
             <div class="col-lg-12 col-md-6 mb-r">
                 <!--Card-->
                 <ul class="list-group">
+                    @if ($categorie)
             @foreach($categorie as $categories)
                         <li class="list-group-item"><a href=" {{ url('article/'.$categories->blog_id.'/categorie/'.$categories->id) }} "> {{ $categories->name }} </a></li>
             @endforeach
+                        @endif
                 </ul>
-
+        @if ($blog)
             @foreach($blog as $b)
                 <!--First row-->
                     <form action="{{ url('categorie/'.$b->id)}}" method="POST">
@@ -49,7 +51,7 @@
                     </div>
                     </form>
             @endforeach
-
+    @endif
             <!--/.Second row-->
 
             </div>
