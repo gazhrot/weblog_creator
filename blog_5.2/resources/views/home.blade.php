@@ -114,20 +114,6 @@
             <div class="col-lg-4">
 
                 <div class="widget-wrapper">
-                    <h4>Categories:</h4>
-                    <br>
-                    <div class="list-group">
-                        <a href="#" class="list-group-item active">Sport</a>
-                        <a href="#" class="list-group-item">Music</a>
-                        <a href="#" class="list-group-item">Travels</a>
-                        <a href="#" class="list-group-item">Fashion</a>
-                        <a href="#" class="list-group-item">Parties</a>
-                    </div>
-                </div>
-
-
-
-                <div class="widget-wrapper">
                     <br>
                     <h4>Suivis:</h4>
                     <br>
@@ -219,6 +205,11 @@
 
 <script>
     new WOW().init();
+
+    // Material Select Initialization
+    $(document).ready(function() {
+        $('.mdb-select').material_select();
+    });
 </script>
 
 </body>
