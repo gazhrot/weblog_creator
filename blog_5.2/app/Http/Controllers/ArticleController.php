@@ -19,6 +19,7 @@ class ArticleController extends Controller
         }
 
         $article = new Article;
+        $article->categorie_id = $request->input('categorie_id');
         $article->titre = $request->input('titre');
         $article->chapo = $request->input('chapo');
         $article->corps = $request->input('corps');
