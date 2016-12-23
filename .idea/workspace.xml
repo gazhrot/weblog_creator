@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e01376a4-e2d3-4205-8a35-d1ff118181e4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog_5.2/app/Http/routes.php" afterPath="$PROJECT_DIR$/blog_5.2/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog_5.2/resources/views/files/editcat.blade.php" afterPath="$PROJECT_DIR$/blog_5.2/resources/views/files/editcat.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,21 +49,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editcat.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="editcat.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog_5.2/resources/views/files/editcat.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="36" column="77" lean-forward="true" selection-start-line="36" selection-start-column="77" selection-end-line="36" selection-end-column="77" />
+            <state relative-caret-position="360">
+              <caret line="20" column="55" lean-forward="false" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog_5.2/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="36" column="55" lean-forward="false" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+            <state relative-caret-position="474">
+              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -129,7 +130,6 @@
         <option value="$PROJECT_DIR$/blog_5.2/.gitignore" />
         <option value="$PROJECT_DIR$/blog_5.2/app/Http/Controllers/ArticleController.php" />
         <option value="$PROJECT_DIR$/blog_5.2/app/Http/Controllers/BlogController.php" />
-        <option value="$PROJECT_DIR$/blog_5.2/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/blog_5.2/app/Commentaire.php" />
         <option value="$PROJECT_DIR$/blog_5.2/app/Categorie.php" />
         <option value="$PROJECT_DIR$/blog_5.2/app/Article.php" />
@@ -137,6 +137,7 @@
         <option value="$PROJECT_DIR$/blog_5.2/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/blog_5.2/resources/views/admin.blade.php" />
         <option value="$PROJECT_DIR$/blog_5.2/resources/views/files/office.blade.php" />
+        <option value="$PROJECT_DIR$/blog_5.2/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/blog_5.2/resources/views/files/editcat.blade.php" />
       </list>
     </option>
@@ -400,12 +401,12 @@
       <option name="presentableId" value="Default" />
       <updated>1482429414835</updated>
       <workItem from="1482429416413" duration="64000" />
-      <workItem from="1482484564179" duration="5898000" />
+      <workItem from="1482484564179" duration="7283000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5962000" />
+    <option name="totallyTimeSpent" value="7347000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="27" width="1869" height="1053" extended-state="0" />
@@ -625,18 +626,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog_5.2/resources/views/files/editcat.blade.php">
+    <entry file="file://$PROJECT_DIR$/blog_5.2/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="36" column="77" lean-forward="true" selection-start-line="36" selection-start-column="77" selection-end-line="36" selection-end-column="77" />
+        <state relative-caret-position="474">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog_5.2/app/Http/routes.php">
+    <entry file="file://$PROJECT_DIR$/blog_5.2/resources/views/files/editcat.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="36" column="55" lean-forward="false" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+        <state relative-caret-position="360">
+          <caret line="20" column="55" lean-forward="false" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
           <folding />
         </state>
       </provider>

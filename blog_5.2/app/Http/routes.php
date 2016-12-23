@@ -38,7 +38,8 @@ Route::group(['before' => 'auth'], function () {
 	Route::get('/profil', function () { return view('files/profil'); });
 	Route::get('/messagerie', function () { return view('files/messagerie '); });
 	Route::get('/write', function () { return view('files/write '); });
-	Route::get('/editcat/{id?}', function ($id = 1) {
+
+	Route::post('/editcat/{id?}', function ($id = 1) {
 		
 		if ($id) {
 			$all_cat = App\Categorie::where('blog_id', $id)->get();
