@@ -47,9 +47,10 @@ Route::group(['before' => 'auth'], function () {
 
         return view('files/editcat', ['blog' => $blog, 'categorie' => $all_cat]);
     });
-    Route::get('/article/{id}', function ($id) {
+    Route::get('/article/{id}/categorie/{id_cat}', function ($id, $id_cat) {
         $current_blog = App\Blog::findOrFail($id)->get();
-        return view('files/article', ['current' => $current_blog]);
+        $categorie = App\Categorie::findOrFail($id)->get();
+        return view('files/article', ['current' => $current_blog, 'categorie' => $categorie]);
     });
     Route::post('/article', 'ArticleController@create');
     Route::post('/categorie/{id}', 'CategorieController@create');
