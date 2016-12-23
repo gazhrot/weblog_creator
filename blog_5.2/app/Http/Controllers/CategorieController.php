@@ -15,7 +15,7 @@ class CategorieController extends Controller
     {
         $categorie = new Categorie;
         $categorie->blog_id = $id;
-        $categorie->name = $request->input('name');
+        $categorie->name = $request->input('categorie');
         $categorie->save();
 
         return redirect();
