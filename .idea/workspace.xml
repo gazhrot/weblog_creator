@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e01376a4-e2d3-4205-8a35-d1ff118181e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog_5.2/app/Http/Controllers/CategorieController.php" afterPath="$PROJECT_DIR$/blog_5.2/app/Http/Controllers/CategorieController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog_5.2/app/Http/routes.php" afterPath="$PROJECT_DIR$/blog_5.2/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog_5.2/resources/views/admin.blade.php" afterPath="$PROJECT_DIR$/blog_5.2/resources/views/admin.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog_5.2/resources/views/files/creatblog.blade.php" afterPath="$PROJECT_DIR$/blog_5.2/resources/views/files/creatblog.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog_5.2/resources/views/files/article.blade.php" afterPath="$PROJECT_DIR$/blog_5.2/resources/views/files/article.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog_5.2/resources/views/files/editcat.blade.php" afterPath="$PROJECT_DIR$/blog_5.2/resources/views/files/editcat.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog_5.2/resources/views/home.blade.php" afterPath="$PROJECT_DIR$/blog_5.2/resources/views/home.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog_5.2/resources/views/item.blade.php" afterPath="$PROJECT_DIR$/blog_5.2/resources/views/item.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,6 +28,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ArticleController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog_5.2/app/Http/Controllers/ArticleController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="29" column="1" lean-forward="false" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="creatblog.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog_5.2/resources/views/files/creatblog.blade.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -47,8 +51,8 @@
       <file leaf-file-name="article.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog_5.2/resources/views/files/article.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="762">
-              <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="11" />
+            <state relative-caret-position="396">
+              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -57,8 +61,8 @@
       <file leaf-file-name="editcat.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog_5.2/resources/views/files/editcat.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -81,16 +85,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
               <caret line="26" column="57" lean-forward="false" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Article.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog_5.2/app/Article.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -140,13 +134,13 @@
         <option value="$PROJECT_DIR$/blog_5.2/app/Commentaire.php" />
         <option value="$PROJECT_DIR$/blog_5.2/app/Categorie.php" />
         <option value="$PROJECT_DIR$/blog_5.2/app/Article.php" />
-        <option value="$PROJECT_DIR$/blog_5.2/resources/views/files/article.blade.php" />
         <option value="$PROJECT_DIR$/blog_5.2/resources/views/files/office.blade.php" />
         <option value="$PROJECT_DIR$/blog_5.2/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/blog_5.2/resources/views/admin.blade.php" />
         <option value="$PROJECT_DIR$/blog_5.2/resources/views/files/creatblog.blade.php" />
         <option value="$PROJECT_DIR$/blog_5.2/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/blog_5.2/resources/views/item.blade.php" />
+        <option value="$PROJECT_DIR$/blog_5.2/resources/views/files/article.blade.php" />
         <option value="$PROJECT_DIR$/blog_5.2/resources/views/files/editcat.blade.php" />
       </list>
     </option>
@@ -415,7 +409,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7874000" />
+    <option name="totallyTimeSpent" value="8727000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="27" width="1869" height="1053" extended-state="0" />
@@ -730,14 +724,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog_5.2/app/Http/Controllers/ArticleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="29" column="1" lean-forward="false" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog_5.2/app/Media.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -844,18 +830,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blog_5.2/app/Http/Controllers/ArticleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="29" column="1" lean-forward="false" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog_5.2/resources/views/files/article.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="762">
-          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="11" />
+        <state relative-caret-position="396">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog_5.2/resources/views/files/editcat.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
           <folding />
         </state>
       </provider>

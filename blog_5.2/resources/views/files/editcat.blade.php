@@ -6,7 +6,7 @@
     <section class="section">
 
         <!--Section heading-->
-        <h1 class="section-heading">  Ajouter une Categorie </h1>
+        <h1 class="section-heading">  Liste des Categories </h1>
         <!--Section sescription-->
 
         <!--First row-->
@@ -16,6 +16,11 @@
             <!--First column-->
             <div class="col-lg-12 col-md-6 mb-r">
                 <!--Card-->
+                <ul class="list-group">
+            @foreach($categorie as $categories)
+                        <li class="list-group-item"><a href=" {{ url('article/'.$categories->blog_id.'/categories/'.$categories->id) }} "> {{ $categories->name }} </a></li>
+            @endforeach
+                </ul>
 
             @foreach($blog as $b)
                 <!--First row-->
