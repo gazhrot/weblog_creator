@@ -11,12 +11,13 @@ use App\Categorie;
 
 class CategorieController extends Controller
 {
-    public function create(Request $request)
+    public function create(Request $request, $id)
     {
         $categorie = new Categorie;
-        $categorie->blog_id = 1;
+        $categorie->blog_id = $id;
         $categorie->name = $request->input('name');
         $categorie->save();
-        return new Response();
+
+        return redirect();
     }
 }

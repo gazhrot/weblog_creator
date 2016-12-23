@@ -27,6 +27,6 @@ class BlogController extends Controller
         $blog->banniere = $fileName;
         $blog->save();
 
-        return redirect('office');
+        return view('files/editcat', ['blog_id', $blog->id]);
     }
 }
