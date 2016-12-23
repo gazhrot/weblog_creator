@@ -24,7 +24,7 @@
                             <!--Card image-->
                             <div class="view overlay hm-white-slight">
                                 <img src="{{ asset('upload/'.$blogs->banniere) }}" class="img-fluid" alt="">
-                                <a href="{{ url('/article/'.$blogs->id) }}">
+                                <a href="{{ url('/editcat/'.$blogs->id) }}">
                                     <div class="mask"></div>
                                 </a>
                             </div>
@@ -37,7 +37,7 @@
                                 <!--Text-->
                                 <p class="card-text">{{ $blogs->description }}</p>
                                 <div class="read-more">
-                                    <a href="{{ url('/article/'.$blogs->id) }}" class="btn btn-primary">Voir</a>
+                                    <a href="{{ url('/editcat/'.$blogs->id) }}" class="btn btn-primary">Voir</a>
                                 </div>
                             </div>
                             <!--/.Card content-->

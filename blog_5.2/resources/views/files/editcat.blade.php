@@ -17,9 +17,20 @@
                 <!--Card-->
 
 
-                <form action="" method="POST">
                     <!--First row-->
                     <div class="row">
+
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <select class="mdb-select">
+                                    <option value="" disabled selected>Listes des categories</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <form action="{{ url('categorie/')}}" method="GET">
                         <!--First column-->
                         <div class="col-md-12">
                             <div class="md-form">
