@@ -13,10 +13,10 @@
 
 /* INDEX */
 Route::get('/', function () {
-	if (Illuminate\Support\Facades\Auth::check())
-		return redirect('/office');
-	else
-		return view('files/home'); 
+    if (Illuminate\Support\Facades\Auth::check())
+        return redirect('/office');
+    else
+        return view('files/home');
 });
 
 /* LOGIN / REGISTER */
@@ -29,30 +29,29 @@ Route::get('/logout', 'Auth\AuthController@logout');
 
 
 Route::group(['before' => 'auth'], function () {
-	Route::get('/edit', function () { return view('files/creatblog'); });
-	Route::get('/office', function () { 
-		$blog = App\Blog::where('user_id', Illuminate\Support\Facades\Auth::user()->id)->get();
-		return view('files/office', ['blog' => $blog]); 
-	});
-	Route::get('/friend', function () { return view('files/friend'); });
-	Route::get('/profil', function () { return view('files/profil'); });
-	Route::get('/messagerie', function () { return view('files/messagerie '); });
-	Route::get('/write', function () { return view('files/write '); });
+    Route::get('/edit', function () { return view('files/creatblog'); });
+    Route::get('/office', function () {
+        $blog = App\Blog::where('user_id', Illuminate\Support\Facades\Auth::user()->id)->get();
+        return view('files/office', ['blog' => $blog]);
+    });
+    Route::get('/friend', function () { return view('files/friend'); });
+    Route::get('/profil', function () { return view('files/profil'); });
+    Route::get('/messagerie', function () { return view('files/messagerie '); });
+    Route::get('/write', function () { return view('files/write '); });
+    Route::get('/editcat/{id?}', function ($id = 1) {
 
-	Route::post('/editcat/{id?}', function ($id = 1) {
-		
-		if ($id) {
-			$all_cat = App\Categorie::where('blog_id', $id)->get();
-			$blog = App\Blog::findOrFail($id)->get(); 
-		}
+        if ($id) {
+            $all_cat = App\Categorie::where('blog_id', $id)->get();
+            $blog = App\Blog::where('id', $id)->get();
+        }
 
-		return view('files/editcat', ['blog' => $blog, 'categorie' => $all_cat]); 
-	});
-	Route::get('/article/{id}', function ($id) {
-		$current_blog = App\Blog::findOrFail($id)->get();
-		return view('files/article', ['current' => $current_blog]);
-	});
-	Route::post('/article', 'ArticleController@create');
-	Route::get('/categorie/{id}', 'CategorieController@create');
-	Route::post('/blog', 'BlogController@create');
+        return view('files/editcat', ['blog' => $blog, 'categorie' => $all_cat]);
+    });
+    Route::get('/article/{id}', function ($id) {
+        $current_blog = App\Blog::findOrFail($id)->get();
+        return view('files/article', ['current' => $current_blog]);
+    });
+    Route::post('/article', 'ArticleController@create');
+    Route::post('/categorie/{id}', 'CategorieController@create');
+    Route::post('/blog', 'BlogController@create');
 });

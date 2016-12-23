@@ -180,16 +180,6 @@
 </main>
 
 
-<!--Footer-->
-<footer class="page-footer center-on-small-only primary-color-dark">
-    <!--Copyright-->
-    <div class="footer-copyright">
-        <div class="containter-fluid">
-            © 2015 Copyright: <a> JAJABLOG </a>
-        </div>
-    </div>
-    <!--/.Copyright-->
-</footer>
 <!--/.Footer-->
 
 <!-- SCRIPTS -->

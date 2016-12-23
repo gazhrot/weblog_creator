@@ -18,6 +18,6 @@ class CategorieController extends Controller
         $categorie->name = $request->input('categorie');
         $categorie->save();
 
-        return redirect();
+        return redirect('office');
     }
 }
