@@ -18,7 +18,7 @@
                 <!--Card-->
                 <ul class="list-group">
             @foreach($categorie as $categories)
-                        <li class="list-group-item"><a href=" {{ url('article/'.$categories->blog_id.'/categories/'.$categories->id) }} "> {{ $categories->name }} </a></li>
+                        <li class="list-group-item"><a href=" {{ url('article/'.$categories->blog_id.'/categorie/'.$categories->id) }} "> {{ $categories->name }} </a></li>
             @endforeach
                 </ul>
 

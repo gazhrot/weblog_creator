@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Blog;
 use App\Article;
+use Illuminate\Http\RedirectResponse;
 
 class ArticleController extends Controller
 {
@@ -26,6 +27,7 @@ class ArticleController extends Controller
         $article->photo = $fileName;
         $article->save();
 
-        return new Response();
+
+        return back();
     }
 }
