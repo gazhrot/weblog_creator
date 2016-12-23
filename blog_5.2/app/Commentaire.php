@@ -18,4 +18,9 @@ class Commentaire extends Model
 
     protected $rules 	  = [];
 	protected $hidden 	  = [];
+
+	public function article()
+    {
+        return $this->belongsTo('App\Article');
+    }
 }

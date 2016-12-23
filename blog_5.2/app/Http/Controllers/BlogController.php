@@ -27,6 +27,6 @@ class BlogController extends Controller
         $blog->banniere = $fileName;
         $blog->save();
 
-        return new Response();
+        return redirect('office');
     }
 }

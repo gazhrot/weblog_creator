@@ -13,28 +13,41 @@
         <div class="row">
 
             <!--First column-->
-            <div class="col-lg-2 col-md-4 mb-r">
-                <!--Card-->
-                <div class="card card-cascade wider">
-                    <!--Card image-->
-                    <div class="view overlay hm-white-slight">
-                        <img src="http://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/shoes%20(3).jpg" class="img-fluid" alt="">
-                        <a>
-                            <div class="mask"></div>
-                        </a>
+
+            @foreach ($blog as $blogs)
+
+                <!--First column-->
+                    <div class="col-lg-4">
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay hm-white-slight">
+                                <img src="{{ asset('upload/'.$blogs->banniere) }}" class="img-fluid" alt="">
+                                <a href="{{ url('/article/'.$blogs->id) }}">
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+                            <!--/.Card image-->
+
+                            <!--Card content-->
+                            <div class="card-block">
+                                <!--Title-->
+                                <h4 class="card-title">{{ $blogs->titre }}</h4>
+                                <!--Text-->
+                                <p class="card-text">{{ $blogs->description }}</p>
+                                <div class="read-more">
+                                    <a href="{{ url('/article/'.$blogs->id) }}" class="btn btn-primary">Voir</a>
+                                </div>
+                            </div>
+                            <!--/.Card content-->
+
+                        </div>
+                        <!--/.Card-->
                     </div>
-                    <!--/.Card image-->
-                    <!--Card content-->
-                    <div class="card-block text-xs-center">
-                        <!--Category & Title-->
-                        <a href="" class="text-muted"><h5>Shoes</h5></a>
-                        <h4 class="card-title"><strong><a href="">Pink sneakers</a></strong></h4>
-                    </div>
-                    <!--/.Card content-->
-                </div>
-                <!--/.Card-->
-            </div>
-            <!--/First column-->
+                    <!--/.First column-->
+
+            @endforeach
 
         </div>
         <!--/First row-->

@@ -23,4 +23,9 @@ class Article extends Model
 	{
 		return $this->belongsTo('App\Categorie');
 	}
+
+	public function commentaire()
+    {
+        return $this->hasMany('App\Commentaire');
+    }
 }

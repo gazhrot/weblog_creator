@@ -58,6 +58,8 @@
                         <ul>
                             <li><a href="{{ url('/office') }}" class="waves-effect">Mes blogs</a>
                             </li>
+                            <li><a href="{{ url('/edit') }}" class="waves-effect">Créer un blog</a>
+                            </li>
                             <li><a href="{{ url('/friend') }}" class="waves-effect">Mes Amis</a>
                             </li>
                         </ul>
