@@ -19,6 +19,7 @@ class CreateArticleTable extends Migration
             $table->string('titre');
             $table->string('chapo');
             $table->string('corps');
+            $table->string('photo');
             $table->timestamps();
 
             $table->foreign('categorie_id')->references('id')->on('categorie')->onDelete('cascade');
