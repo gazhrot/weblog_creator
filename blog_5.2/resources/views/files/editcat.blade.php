@@ -30,7 +30,7 @@
                                 </select>
                             </div>
                         </div>
-                        <form action="{{ url('categorie/')}}" method="GET">
+                        <form action="{{ url('categorie/'.$blog)}}" method="GET">
                         <!--First column-->
                         <div class="col-md-12">
                             <div class="md-form">
