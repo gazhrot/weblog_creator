@@ -39,8 +39,9 @@ Route::group(['before' => 'auth'], function () {
 	Route::get('/messagerie', function () { return view('files/messagerie '); });
 	Route::get('/write', function () { return view('files/write '); });
 	Route::get('/editcat/{id}', function ($id) {
+		$all_cat = App\Categorie::where('blog_id', $id)->get();
 		$blog = App\Blog::findOrFail($id)->get(); 
-		return view('files/editcat', ['blog' => $blog]); 
+		return view('files/editcat', ['blog' => $blog, 'categorie' => $all_cat]); 
 	});
 	Route::get('/article/{id}', function ($id) {
 		$current_blog = App\Blog::findOrFail($id)->get();
