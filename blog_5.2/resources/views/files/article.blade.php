@@ -1,5 +1,3 @@
-
-
 @extends('home')
 
 @section('content')
@@ -14,7 +12,7 @@
     <!--/.Page heading-->
     <hr>
 
-    <form action="" method="POST">
+    <form action="{{url('/article')}}" method="POST" enctype="multipart/form-data">
         <!--First row-->
         <div class="row">
             <div class="col-md-12">
@@ -46,7 +44,7 @@
             <div class="file-field">
                 <div class="btn btn-primary btn-sm">
                     <span>Choose file</span>
-                    <input type="file">
+                    <input type="file" name="">
                 </div>
                 <div class="file-path-wrapper">
                     <input class="file-path validate" type="text" placeholder="Upload your file">
@@ -61,63 +59,37 @@
         </div>
     </form>
 
-
-
     <!--/.Page heading-->
     <hr>
 
 
+    @foreach ($current as $currents)
+        @foreach($currents->categorie as $categorie)
 
-    <!--Post-->
+            @foreach($categorie->article as $article)
+            <!--Post-->
     <div class="post-wrapper">
         <!--Post data-->
-        <h1 class="h1-responsive">Post title <small class="text-muted">Secondary text</small></h1>
-        <h5>Written by <a href="">John Doe</a>, 30.04.2016</h5>
-
+        <h1 class="h1-responsive">{{ $article->titre }}<small class="text-muted">{{ $article->chapo }}</small></h1>
+        <h5>Written by <a href="">{{ $currents->user->name }}</a>, {{ $article->created_at }}</h5>
         <br>
-
         <!--Featured image -->
         <div class="view overlay hm-white-light z-depth-1-half">
             <img src="http://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg" class="img-fluid " alt="">
             <div class="mask">
             </div>
         </div>
-
         <br>
-
         <!--Post excerpt-->
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, officia omnis. Vero nihil neque dignissimos hic voluptas quisquam
-            amet porro, similique libero ullam veritatis tempora cumque voluptates harum. Repellendus, impedit.</p>
-
+        <p>{{ $article->corps }}</p>
         <!--"Détails" button-->
         <button class="btn btn-primary">Détails</button>
     </div>
     <!--/.Post-->
 
     <hr>
+            @endforeach
+        @endforeach
+    @endforeach
 
-    <!--Post-->
-    <div class="post-wrapper">
-        <!--Post data-->
-        <h1 class="h1-responsive">Post title <small class="text-muted">Secondary text</small></h1>
-        <h5>Written by <a href="">John Doe</a>, 30.04.2016</h5>
-
-        <br>
-
-        <!--Featured image -->
-        <div class="view overlay hm-white-light z-depth-1-half">
-            <img src="http://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg" class="img-fluid " alt="">
-            <div class="mask">
-            </div>
-        </div>
-
-        <br>
-
-        <!--Post excerpt-->
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, officia omnis. Vero nihil neque dignissimos hic voluptas quisquam amet porro, similique libero ullam veritatis tempora cumque voluptates harum. Repellendus, impedit.</p>
-
-        <!--"Détails" button-->
-        <button class="btn btn-primary">Détails</button>
-    </div>
-    <!--/.Post-->
 @endsection

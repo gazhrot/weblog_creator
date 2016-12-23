@@ -24,4 +24,9 @@ class Categorie extends Model
 	{
 		return $this->belongsTo('App\Blog');
 	}
+
+	public function article()
+    {
+        return $this->hasMany('App\Article');
+    }
 }
